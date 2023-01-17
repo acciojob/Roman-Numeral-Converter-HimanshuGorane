@@ -10,7 +10,7 @@ function convertToRoman(num) {
     };
 let result = '';
 
-  for (let key in roman) {
+  for (let key in obj) {
     while (num >= roman[key]) {
       result += key;
       num -= roman[key];
