@@ -8,7 +8,15 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
+let result = '';
 
+  for (let key in roman) {
+    while (num >= roman[key]) {
+      result += key;
+      num -= roman[key];
+    }
+  }
+  return result;
   //your code here
 
 }
